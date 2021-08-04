@@ -1,0 +1,128 @@
+<!-- <link rel="stylesheet" href="header.component.css"> -->
+
+<!--Navbar-->
+<mdb-navbar SideClass="navbar gradient fixed-top navbar-expand-lg navbar-dark  " [containerInside]="false">
+
+  <!-- Navbar brand -->
+  <mdb-navbar-brand><a class="navbar-brand" routerLink=""><img src="../../../assets/img/ictak.png" style="max-width: 55px;"></a></mdb-navbar-brand>
+
+  <!-- Collapsible content -->
+  <links>
+
+    <!-- Links -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link waves-light" routerLink="" mdbWavesEffect> <span>Home</span> </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" routerLink="about" mdbWavesEffect> <span>About</span> </a>
+      </li>
+
+      <!-- Dropdown -->
+      <li class="nav-item dropdown" dropdown>
+        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+          Courses</a>
+        <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
+          <a class="dropdown-item waves-light" mdbWavesEffect routerLink=""> <span>Retail</span> </a>
+          <a class="dropdown-item waves-light" mdbWavesEffect routerLink=""> <span>Institutional</span></a>
+          <a class="dropdown-item waves-light" mdbWavesEffect routerLink=""> <span>Corporate</span></a>
+        </div>
+      </li>
+      <li class="nav-item dropdown" dropdown>
+        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+          <span></span>  Offerings</a>
+        <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
+          <a class="dropdown-item waves-light" mdbWavesEffect routerLink="partnership"> <span>Partnership</span></a>
+          <a class="dropdown-item waves-light" mdbWavesEffect routerLink="membership"> <span>Membership</span> </a>
+          
+        </div>
+      </li>
+      <!-- <li class="nav-item drop-down" dropdown><a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+        <span></span>  Offerings</a>
+        <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
+          <ul>
+            <li><a class="dropdown-item waves-light" mdbWavesEffect routerLink="partnership"> <span>Partnership</span></a></li>              
+            <li class="nav-item dropdown" dropdown><a class="dropdown-item waves-light" mdbWavesEffect routerLink=""> <span>Membership</span> 
+              <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
+                  <ul>
+                    <li class="nav-item drop-down" dropdown><a class="dropdown-item waves-light" mdbWavesEffect routerLink=""> <span>Academic Membership</span> </a></li>
+                    <li class="nav-item drop-down" dropdown><a class="dropdown-item waves-light" mdbWavesEffect routerLink=""> <span>Corporate Membership</span> </a></li>
+                  </ul>
+              </div> 
+              </a>             
+            </li>
+          </ul>
+        </div>
+      </li> -->
+
+      <li class="nav-item">
+        <a class="nav-link waves-light" routerLink="events" mdbWavesEffect>Events</a>
+      </li>
+
+    </ul>
+    <!-- Links -->
+  </links>
+  <!-- Collapsible content -->
+
+</mdb-navbar>
+<!--/.Navbar-->
+
+  
+  <!-- <nav class="navbar bg-dark fixed-top navbar-expand-lg navigation-wrap">
+    <div class="container">
+      <a class="navbar-brand" routerlink=""><img src="../../../assets/img/ictak.png" style="max-width: 55px;"></a>
+      <button
+      class="navbar-toggler navbar-toggler-right"
+      type="button"
+      (click)="togglerSecondExample.toggle()"
+      aria-controls="navbarTogglerDemo02"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+    <div
+    class="collapse navbar-collapse justify-content-end"
+    id="navbarTogglerDemo02 "
+          mdbCollapse
+          #togglerSecondExample="mdbCollapse"
+  >
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" routerLink="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="about">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" routerLink="" id="navbardrop" data-toggle="dropdown">
+              Courses
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" routerLink="">Retail </a>
+              <a class="dropdown-item" routerLink="">Institutional</a>
+              <a class="dropdown-item" routerLink="">Corporate</a>
+            </div>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Offerings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Events</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>  -->
+
+
+
+   
+
+
+
+
+
+
+

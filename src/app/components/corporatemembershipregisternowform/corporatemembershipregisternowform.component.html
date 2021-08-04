@@ -1,0 +1,169 @@
+<div class="container-contact100" style="margin-top: 5%;">
+    <div class="wrap-contact100">
+        <form class="contact100-form validate-form" [formGroup]="registernowform" (ngSubmit)="AddCorporateMember()" method="POST" enctype="multipart/form-data">
+            <span class="contact100-form-title">
+                WELCOME
+            </span>
+
+            <div class="wrap-input100 validate-input" data-validate="Name is required">
+                <span class="label-input100">Name of the organization </span>
+                <input class="input100" type="text" formControlName="name" name="name" placeholder="Enter your name" [(ngModel)]="memberItem.name">
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                <span class="label-input100">Address </span>
+                <input class="input100" type="text" formControlName="address" name="address" placeholder="Enter your email addess" [(ngModel)]="memberItem.address">
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                <span class="label-input100">Website  </span>
+                <input class="input100" type="text" formControlName="website" name="website" placeholder="Enter your phone number" [(ngModel)]="memberItem.website">
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                <span class="label-input100">Head of the organization</span>
+                <input class="input100" type="text" formControlName="head" name="head" placeholder="Enter your firm name" [(ngModel)]="memberItem.head">
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                <span class="label-input100">Nature of your organization (Product/Services) </span>
+                <input class="input100" type="text" formControlName="nature" name="nature" placeholder="Enter your address" [(ngModel)]="memberItem.nature">
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz" >
+                <span class="label-input100">Type of the Company </span>
+                <div>
+                    <select class="selection-2" formControlName="type" name="type" [(ngModel)]="memberItem.type">
+                        <option selected>Public</option>
+                        <option>Private</option>
+                        <option>Quassi Govt.</option>
+                        <option>PPP</option>
+                        <option>Proprietorship</option>
+                    </select>
+                </div>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                <span class="label-input100">Corporate Identity No.</span>
+                <input class="input100" type="text" formControlName="identity" name="identity" placeholder="Enter your Office Space area" [(ngModel)]="memberItem.identity">
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                <span class="label-input100">GSTN </span>
+                <input class="input100" type="text" formControlName="gstn" name="gstn" placeholder="Your answer" [(ngModel)]="memberItem.gstn">
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                <span class="label-input100">Date of Incorporation</span>
+                <input class="input100" type="date" formControlName="dateofincorporation" name="dateofincorporation" placeholder="Your answer" [(ngModel)]="memberItem.dateofincorporation">
+                <span class="focus-input100"></span>
+            </div>
+
+            <span class="contact100-form-title">
+                Point of contact details
+            </span>
+
+            <div class="wrap-input100 validate-input" data-validate="Name is required">
+                <span class="label-input100">Name</span>
+                <input class="input100" type="text" formControlName="cdname" name="cdname" placeholder="Enter your name" [(ngModel)]="memberItem.cdname">
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                <span class="label-input100">Phone </span>
+                <input class="input100" type="text" formControlName="phone" name="phone" placeholder="Enter your phone number" [(ngModel)]="memberItem.phone">
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                <span class="label-input100">Email</span>
+                <input class="input100" type="text" formControlName="email" name="email" placeholder="Enter your email addess" [(ngModel)]="memberItem.email">
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                <span class="label-input100">Technical Skills sets commonly used in the organization</span>
+                <input class="input100" type="text" formControlName="skillset" name="skillset" placeholder="Enter your firm name" [(ngModel)]="memberItem.skillset">
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                <span class="label-input100">Total number of employees in your organization </span>
+                <input class="input100" type="text" formControlName="noofemployees" name="noofemployees" placeholder="Enter your address" [(ngModel)]="memberItem.noofemployees">
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                <span class="label-input100">Average yearly fresher hiring in your company </span>
+                <div>
+                    <select class="selection-2" formControlName="nooffreshers" name="nooffreshers" [(ngModel)]="memberItem.nooffreshers">
+                        <option selected>1-10</option>
+                        <option>11-20</option>
+                        <option>20-30</option>
+                        <option>30-40</option>
+                        <option>40-50</option>
+                        <option>>50</option>
+                    </select>
+                </div>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                <span class="label-input100">Number of patents filed by your organization</span>
+                <div>
+                    <select class="selection-2" formControlName="noofpatents" name="noofpatents" [(ngModel)]="memberItem.noofpatents">
+                        <option selected>1-10</option>
+                        <option>>10</option>
+                        <option>NA</option>
+                    </select>
+                </div>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                <span class="label-input100">How do you like to collaborate with ICTAK through the corporate membership?</span>
+                <span class="label-input100"><input class="input100" type="checkbox" id="option1" name="experts" [(ngModel)]="memberItem.experts" ng-true-value="'YES'" ng-false-value="'NO'" ng-checked="memberItem.experts.selected === 'YES'">Providing experts for skill sessions</span>
+                <span class="label-input100"><input class="input100" type="checkbox" id="option2" name="fresher" [(ngModel)]="memberItem.fresher" ng-true-value="'YES'" ng-false-value="'NO'" ng-checked="memberItem.fresher.selected === 'YES'">Fresher hiring</span>
+                <span class="label-input100"><input class="input100" type="checkbox" id="option3" name="internship" [(ngModel)]="memberItem.internship" ng-true-value="'YES'" ng-false-value="'NO'" ng-checked="memberItem.internship.selected === 'YES'">Internships</span>
+                <span class="label-input100"><input class="input100" type="checkbox" id="option4" name="training" [(ngModel)]="memberItem.training" ng-true-value="'YES'" ng-false-value="'NO'" ng-checked="memberItem.training.selected === 'YES'">Employee training in technologysoft skills</span>
+                <span class="label-input100"><input class="input100" type="checkbox" id="option5" name="capstone" [(ngModel)]="memberItem.capstone" ng-true-value="'YES'" ng-false-value="'NO'" ng-checked="memberItem.capstone.selected === 'YES'">Capstone Projects assistance</span>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                <span class="label-input100">Any academic interface program/ activities conducted by your organization? if so please provide the details</span>
+                <textarea class="input100" formControlName="message" name="message" placeholder="Your message here..." [(ngModel)]="memberItem.message"></textarea>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="container-contact100-form-btn">
+                <div class="wrap-contact100-form-btn">
+                    <div class="contact100-form-bgbtn"></div>
+                    <!-- <button class="contact100-form-btn">
+                        <span>
+                            Submit
+                            <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                        </span>
+                    </button> -->
+                    <!-- <input class="contact100-form-btn" type="submit" [disabled]="registernowform.pristine || registernowform.invalid"
+            value="Submit" id="addsubmit"> -->
+            <button mat-stroked-button color="accent" class="btn-block"
+              [disabled]="registernowform.pristine || registernowform.invalid " class="contact100-form-btn btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+<div id="dropDownSelect1"></div>
+
